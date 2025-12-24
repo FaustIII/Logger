@@ -15,14 +15,14 @@ C++11 compatible compiler
 
 # API Reference
 ## Constructors
-### Logger(const std::string& loggerName) - Creates logger with internal mutex
-### Logger(const std::string& loggerName, std::mutex& consoleMutex) - Uses external mutex
+Logger(const std::string& loggerName) - Creates logger with internal mutex
+Logger(const std::string& loggerName, std::mutex& consoleMutex) - Uses external mutex
 
 ## Logging Methods
-### logMessage(const std::string& message) - Regular message (white)
-### logSuccess(const std::string& message) - Success message (bright green)
-### logWarning(const std::string& message) - Warning message (yellow/orange)
-### logError(const std::string& message) - Error message (bright red)
+logMessage(const std::string& message) - Regular message (white)
+logSuccess(const std::string& message) - Success message (bright green)
+logWarning(const std::string& message) - Warning message (yellow/orange)
+logError(const std::string& message) - Error message (bright red)
 
 ## File Logging
 ### enableFileLogging(const std::string& filePath) - Start logging to file
